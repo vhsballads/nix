@@ -1,4 +1,4 @@
-NIX FLAKE TEMPLATES (MINIMAL) // MY SETUP (WIP)
+# NIX FLAKE TEMPLATES (MINIMAL) // MY SETUP (WIP)
 
 - [Minimal version](./minimal):
     - NixOS configuration on `nixos/configuration.nix`, accessible via
