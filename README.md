@@ -1,28 +1,10 @@
-> [!IMPORTANT]  
-> This repo might become slightly out of date as things change fast. Please check official documentation for NixOS and home-manager to make sure you're doing things right. See https://github.com/Misterio77/nix-starter-configs/issues/86 for more info and additional learning resources you might be interested in :D
-
-# Nix Starter Config
-
-This repo contains a few a simple nix flake templates for getting started with
-NixOS + home-manager.
-
-# What this provides
+NIX FLAKE TEMPLATES (MINIMAL) // MY SETUP (WIP)
 
 - [Minimal version](./minimal):
     - NixOS configuration on `nixos/configuration.nix`, accessible via
       `nixos-rebuild --flake .`
     - Home-manager configuration on `home-manager/home.nix`, accessible via
       `home-manager --flake .`
-- [Standard version](./standard):
-    - Basic boilerplate for adding custom packages (under `pkgs`) and overlays
-      (under `overlay`). Accessible on your system, home config, as well as `nix
-      build .#package-name`.
-    - Boilerplate for custom NixOS (`modules/nixos`) and home-manager
-      (`modules/home-manager`) modules
-    - NixOS and home-manager configurations from minimal, and they should
-      also use your overlays and custom packages right out of the box.
-
-# Getting started
 
 Assuming you have a basic NixOS booted up (either live or installed, anything
 works). [Here's a link to the latest NixOS downloads, just for
@@ -31,19 +13,6 @@ you](https://nixos.org/download#download-nixos).
 Alternatively, you can totally use `nix` and `home-manager` on your existing
 distro (or even on Darwin). [Install nix](https://nixos.org/download.html#nix)
 and follow along (just ignore the `nixos-*` commands).
-
-## What template to chose?
-
-If this is your first trying flakes, or you're attempting to migrate your
-(simple) config to it; you should use the minimal version.
-
-If you're here looking for inspiration/tips/good practices (and you already use
-flakes), or you're migrating a config that already has overlays and custom
-packages; try the standard version.
-
-## I like your funny words, magic man
-
-Not sure what this all means?
 
 Take a look at [the learn hub on the NixOS
 website](https://nixos.org/learn.html) (scroll down to guides, the manuals, and
